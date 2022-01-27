@@ -20,7 +20,6 @@ library(freeR)
 ## Sets R not to use scientific notations
 options(scipen=999) 
 
-raw_data_path <- here::here("6.raw_data/")
 ```
 
 ## Exploring data
@@ -37,3 +36,39 @@ excel_sheets(here::here("6.raw_data/Seed dispersal camera data.xls"))
 capture_palat_raw <- read_excel(here::here("6.raw_data/Seed dispersal camera data.xls"), sheet = "refined data") %>% 
   clean_names()
 ```
+
+
+## Checking data
+```{r}
+colnames(capture_palat_raw)
+str(capture_palat_raw)
+
+unique(capture_palat_raw$day_night)
+sort(unique(capture_palat_raw$experimental_unit))
+sort(unique(capture_palat_raw$native_invasive))
+unique(capture_palat_raw$treatment)
+unique(capture_palat_raw$seed_seedling)
+sort(unique(capture_palat_raw$disperser))
+unique(capture_palat_raw$land_crab_rat)
+unique(capture_palat_raw$sex)
+unique(capture_palat_raw$age)
+unique(capture_palat_raw$event_time) ## there is one * that makes the column not be numeric
+unique(capture_palat_raw$time_from_start_hr) ## there is one * that makes the column not be numeric
+unique(capture_palat_raw$disperser_action)
+unique(capture_palat_raw$diaspore_fate)
+unique(capture_palat_raw$reference_plot_fate)
+sort(unique(capture_palat_raw$notes))
+
+complete(capture_palat_raw)
+
+```
+
+Ask id * = NA and then update each column with * and save to clean_data again
+
+## Save
+```{r}
+write_csv(capture_palat_raw, here::here("7.clean_data/Palmyra_seed_dispersal_camera_2005.csv"))
+
+```
+
+

@@ -1,0 +1,38 @@
+attributeName	code	definition
+age	*	
+age	adult	
+age	juvenile	
+age	u	
+day_night	both	
+day_night	day	
+day_night	night	
+diaspore_fate	dispersed	
+diaspore_fate	killed	
+diaspore_fate	manipulated	
+diaspore_fate	no action	
+disperser_action	dispersing	
+disperser_action	gone-disperser not present	
+disperser_action	gone-disperser present	
+disperser_action	killing	
+disperser_action	manipulating	
+disperser_action	no action	
+disperser_action	touching	
+land_crab_rat	Land Crab	
+land_crab_rat	Rat	
+land_crab_rat	Unknown	
+native_invasive	Invasive	
+native_invasive	Native	
+reference_plot_fate	dispersed	
+reference_plot_fate	killed	
+reference_plot_fate	manipulated	
+reference_plot_fate	no action	
+reference_plot_fate	NA	
+seed_seedling	seed	
+seed_seedling	seedling	
+sex	*	
+sex	f	
+sex	m	
+sex	u	
+treatment	seed cluster	
+treatment	seedling	
+treatment	single seed	

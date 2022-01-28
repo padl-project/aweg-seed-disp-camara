@@ -1,0 +1,23 @@
+attributeName	attributeDefinition	class	unit	dateTimeFormatString	missingValueCode	missingValueCodeExplanation
+date		Date		!Add datetime specifier here!		
+location		numeric	!Add units here!			
+day_night		categorical		!Add datetime specifier here!		
+experimental_unit		character				
+native_invasive		categorical				
+treatment		categorical				
+seed_seedling		categorical				
+sample		numeric	!Add units here!			
+disperser		character				
+land_crab_rat		categorical				
+disperser_code		numeric	!Add units here!			
+sex		categorical				
+age		categorical				
+event_time		numeric	!Add units here!			
+time_from_start_hr		numeric	!Add units here!			
+disperser_action		categorical				
+action_code		numeric	!Add units here!			
+diaspore_fate		categorical				
+dispore_fate_code		numeric	!Add units here!			
+reference_plot_fate		categorical				
+reference_plot_fate_code		numeric	!Add units here!			
+notes		character				

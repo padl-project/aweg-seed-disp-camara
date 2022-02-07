@@ -50,8 +50,8 @@ unique(seed_disp_raw$treatment)
 unique(seed_disp_raw$seed_seedling)
 sort(unique(seed_disp_raw$disperser))
 unique(seed_disp_raw$land_crab_rat)
-unique(seed_disp_raw$sex)
-unique(seed_disp_raw$age)
+unique(seed_disp_raw$sex) ## contain *, are these NAs?
+unique(seed_disp_raw$age) ## contain *, are these NAs?
 unique(seed_disp_raw$event_time) ## there is one * that makes the column not be numeric
 unique(seed_disp_raw$time_from_start_hr) ## there is one * that makes the column not be numeric
 unique(seed_disp_raw$disperser_action)
@@ -64,6 +64,8 @@ complete(seed_disp_raw)
 ```
 
 Ask id * = NA and then update each column with * and save to clean_data again
+
+Fix date!
 
 ## Save
 ```{r}
